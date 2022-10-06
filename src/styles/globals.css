@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .px-content {
+    @apply px-4 sm:px-8 md:px-16 lg:px-36;
+  }
+}
