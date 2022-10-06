@@ -5,12 +5,12 @@ export default function Loobtoons() {
   return (
     <HomeLayout title="Loobtoons - Read on chain">
       {/* hero */}
-      <section className="relative flex flex-col items-center justify-center pt-16 pb-32">
+      <section className="relative flex flex-col items-center justify-center px-content pt-16 pb-32">
         <div
           style={{
             backgroundImage: "conic-gradient(from 270deg at 88.32% 100%, #FD1050 0deg, rgba(0, 0, 0, 0.28) 360deg)"
           }}
-          className="relative flex items-center gap-2 pl-4 pr-6 py-8 mr-28 bg-slate-500 rounded-3xl">
+          className="relative flex items-center gap-2 pl-4 pr-6 py-8 md:mr-28 bg-slate-500 rounded-3xl">
           <h1 className="text-6xl font-extrabold inline-flex flex-col space-y-1 divide-y-[0.5px] divide-gray-100">
             <span className="relative text-black pl-5 pr-5">
               <span>Loob</span>
@@ -22,7 +22,7 @@ export default function Loobtoons() {
           </h1>
           <h2 className="text-lg font-semibold text-white">Read on chain</h2>
 
-          <div className="absolute -bottom-12 -right-1/3 flex items-center justify-center bg-[#FC1956] max-w-xs px-2 py-8 rounded-3xl">
+          <div className="absolute -bottom-1/3 inset-x-0 md:-bottom-12 md:-right-1/3 flex items-center justify-center bg-[#FC1956] max-w-xs mx-auto px-2 py-8 rounded-3xl">
             <p className="text-sm text-white text-center">“Giving comic creators ultimate ownership and linking them to the blockchain”.</p>
           </div>
         </div>
@@ -31,7 +31,7 @@ export default function Loobtoons() {
 
       <section className="space-y-10 px-content">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-4xl font-semibold py-4">What is Loobtoons all alout?</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold py-4">What is Loobtoons all alout?</h2>
           <p>
             Loobtoons is a project initiated by Loobles Tech.
             At loobles we continually strive to bridge the gap between web3 and all areas of social networking and interaction Technology.
@@ -40,7 +40,7 @@ export default function Loobtoons() {
         </div>
 
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-2xl font-semibold py-4">How do we intend on doing this?</h2>
+          <h2 className="text-xl md:text-2xl font-semibold py-4">How do we intend on doing this?</h2>
           <p>
             Loobtoons is a decentralized application built on the blockchain.
             This means that Creators are given ultimate ownership of comics by linking them to the blockchain and given them right to sell these comics an NFTs.
@@ -49,7 +49,7 @@ export default function Loobtoons() {
         </div>
 
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-2xl font-semibold py-4">What is Loobtoons all alout?</h2>
+          <h2 className="text-xl md:text-2xl font-semibold py-4">What is Loobtoons all alout?</h2>
           <p>
             NFTs as a whole has been a game Changer in the upcoming technology that is web3.
             At loobtoons, we are giving NFTs a new meaning.

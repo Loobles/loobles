@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <HomeLayout title="Welcome to loobles">
       {/* hero */}
-      <section className="h-[calc(100vh-60px)] relative flex flex-col justify-center px-content mb-12">
-        <div className="flex items-center pb-36">
-          <div className="w-1/2">
+      <section className="md:h-[calc(100vh-60px)] relative flex flex-col md:justify-center px-content mb-12">
+        <div className="flex flex-col md:flex-row items-center md:pb-36">
+          <div className="text-center md:text-left md:w-1/2 py-12 md:py-0">
             <h1 className="text-4xl font-bold max-w-md text-gray-900">
               Welcome to the Loobles Community.
             </h1>
@@ -33,19 +33,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-1/2 border flex items-center justify-center flex-grow">
+          <div className="md:w-1/2 py-40 border flex items-center justify-center flex-grow">
             <p>Coming soon</p>
           </div>
         </div>
 
-        <div className="absolute inset-x-0 bottom-12 px-content">
-          <div className="flex items-center justify-between bg-gray-900 text-gray-100 px-10 py-6 rounded-3xl">
-            <div className="text-center w-1/2 max-w-xs">
+        <div className="md:absolute inset-x-0 bottom-12 pt-8 md:pt-0 sm:px-content">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6 bg-gray-900 text-gray-100 px-4 sm:px-10 py-6 rounded-3xl">
+            <div className="text-center w-full lg:w-1/2 max-w-xs">
               <p className="font-medium">Loobles is here</p>
               <p className="text-sm font-light">Get the latest news delivered to your inbox</p>
             </div>
 
-            <div className="flex items-center space-x-4 w-1/2 max-w-xl">
+            <div className="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-1/2 max-w-xl">
               <input
                 type="text"
                 placeholder="Your email address"
@@ -53,7 +53,7 @@ export default function Home() {
                   py-2 rounded-xl bg-gray-800 text-white w-full
                   border-transparent focus:border-gray-600 focus:ring-0"
               />
-              <Button className="bg-gray-100 text-black">Subscribe</Button>
+              <Button className="w-full sm:w-auto bg-gray-100 text-black">Subscribe</Button>
             </div>
           </div>
         </div>
@@ -63,13 +63,13 @@ export default function Home() {
       {/* collections */}
       <section
         style={{ backgroundImage: heroPatternsDots }}
-        className="flex items-center justify-between px-content py-16">
-        <div className="space-y-2">
+        className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-6 px-content py-16">
+        <div className="space-y-2 text-center md:text-left">
           <h2 className="text-3xl font-semibold">Loobles NFT</h2>
           <p className="text-2xl">All Collections</p>
         </div>
 
-        <div className="max-w-md text-xl font-light leading-8">
+        <div className="max-w-md text-center md:text-left text-xl font-light leading-8">
           Loobles is a collection of 10k NFTs
           100 of these NFTs are listed on the <span className="font-medium underline">ethereum</span> ecosystem, while the rest
           9,900 are on the <span className="font-medium underline">stacks</span> ecosystem.
@@ -78,12 +78,12 @@ export default function Home() {
       {/* collections end */}
 
       {/* nfts */}
-      <section className="flex justify-between px-content pt-8 pb-16 bg-gradient-to-r from-white via-pink-100/50 to-white">
-        <div className="flex-1 max-w-lg flex flex-col items-center mt-32">
+      <section className="flex flex-col md:flex-row items-center justify-between gap-16 md:gap-0 px-content pt-8 pb-16 bg-gradient-to-r from-white via-pink-100/50 to-white">
+        <div className="flex-1 max-w-lg flex flex-col items-center md:mt-32">
           <div className="">
             <Image src="/images/icons/loobles-mono.png" width={240} height={240} />
           </div>
-          <div className="space-y-4">
+          <div className="space-y-4 text-center">
             <h3 className="text-2xl font-semibold py-1">Collection 2</h3>
             <p>
               Our first collection is a number of 100 unique NFTs on Opensea. This collection is our secondary collection.
@@ -92,11 +92,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex-1 max-w-lg flex flex-col items-center mb-32">
+        <div className="flex-1 max-w-lg flex flex-col items-center md:mb-32">
           <div className="">
             <Image src="/images/icons/loobles-old.png" width={240} height={240} />
           </div>
-          <div className="space-y-4">
+          <div className="space-y-4 text-center">
             <h3 className="text-2xl font-semibold py-1">Collection 1</h3>
             <p>
               Our first collection is a number of 100 unique NFTs on Opensea. This collection is our secondary collection.
@@ -110,8 +110,8 @@ export default function Home() {
       {/* utilities */}
       <section
         style={{ backgroundImage: heroPatternsDots }}
-        className="flex items-center justify-between px-content py-16">
-        <div className="max-w-md text-xl font-light leading-8">
+        className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-6 px-content py-16">
+        <div className="max-w-md text-center md:text-left text-xl font-light leading-8">
           <p>
             At the release of our second collection, <span className="font-medium underline">holders of the first collection</span> will have access to our whitelist and are going to have 2 free NFTs in the second collection.
             The second collection is the official NFTs of Loobles Tech.
@@ -121,7 +121,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="space-y-4 text-right">
+        <div className="space-y-4 text-center md:text-right">
           <h2 className="text-3xl font-semibold">Utility</h2>
           <p className="text-2xl">All Collections</p>
         </div>
