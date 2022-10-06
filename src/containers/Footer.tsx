@@ -5,9 +5,9 @@ export function Footer() {
   return (
     <section className="bg-gray-900 text-gray-100 px-content pt-16 pb-20">
       <div className="flex items-center justify-center gap-4 max-w-xs mx-auto">
-        <Image src="/images/icons/discord-mono.png" width={60} height={60} />
-        <Image src="/images/icons/instagram-mono.png" width={32} height={32} />
-        <Image src="/images/icons/twitter-mono.png" width={44} height={44} />
+        <Image alt="discord" src="/images/icons/discord-mono.png" width={60} height={60} />
+        <Image alt="instagram" src="/images/icons/instagram-mono.png" width={32} height={32} />
+        <Image alt="twitter" src="/images/icons/twitter-mono.png" width={44} height={44} />
       </div>
 
       <div className="mt-6 flex flex-col gap-8 items-center px-2">

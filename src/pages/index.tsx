@@ -19,7 +19,7 @@ export default function Home() {
               font-light font-pacifico text-2xl px-1 my-5 inline-block
               bg-clip-text text-transparent bg-pink-400"
             >
-              "let's climb the web"
+              {`"let's climb the web"`}
             </h2>
             <p className="font-light text-lg max-w-md">
               Loobles is a web3 tech company that develops software to aid the web3 Ecosystem.
@@ -81,7 +81,7 @@ export default function Home() {
       <section className="flex flex-col md:flex-row items-center justify-between gap-16 md:gap-0 px-content pt-8 pb-16 bg-gradient-to-r from-white via-pink-100/50 to-white">
         <div className="flex-1 max-w-lg flex flex-col items-center md:mt-32">
           <div className="">
-            <Image src="/images/icons/loobles-mono.png" width={240} height={240} />
+            <Image alt="loobles" src="/images/icons/loobles-mono.png" width={240} height={240} />
           </div>
           <div className="space-y-4 text-center">
             <h3 className="text-2xl font-semibold py-1">Collection 2</h3>
@@ -94,7 +94,7 @@ export default function Home() {
 
         <div className="flex-1 max-w-lg flex flex-col items-center md:mb-32">
           <div className="">
-            <Image src="/images/icons/loobles-old.png" width={240} height={240} />
+            <Image alt="loobles-old" src="/images/icons/loobles-old.png" width={240} height={240} />
           </div>
           <div className="space-y-4 text-center">
             <h3 className="text-2xl font-semibold py-1">Collection 1</h3>

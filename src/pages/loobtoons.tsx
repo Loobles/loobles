@@ -15,7 +15,7 @@ export default function Loobtoons() {
             <span className="relative text-black pl-5 pr-5">
               <span>Loob</span>
               <div className="absolute -top-3 -right-3 select-none">
-                <Image src="/images/icons/loobles-mono-small.png" width={60} height={60} />
+                <Image alt="loobles" src="/images/icons/loobles-mono-small.png" width={60} height={60} />
               </div>
             </span>
             <span className="text-white pl-5 pr-5">Toons</span>
