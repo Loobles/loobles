@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button"
+import { oldCollectionOpensea } from "@/data/links"
 import { HomeLayout } from "@/layouts/HomeLayout"
 import Image from "next/image"
 import Link from "next/link"
@@ -30,7 +31,9 @@ export default function Home() {
               <p className="font-light text-sm text-gray-700">
                 Minting of our first collection is now live!!!
               </p>
-              <Button>Get it now</Button>
+              <a className="block" href={oldCollectionOpensea} target="_blank">
+                <Button>Get it now</Button>
+              </a>
             </div>
           </div>
 
@@ -102,7 +105,9 @@ export default function Home() {
             <p>
               Our first collection is a number of 100 unique NFTs on Opensea. This collection is our secondary collection.
             </p>
-            <Button>Get it now</Button>
+            <a className="block" href={oldCollectionOpensea} target="_blank">
+              <Button>Get it now</Button>
+            </a>
           </div>
         </div>
       </section>
