@@ -32,7 +32,7 @@ export default function Home() {
               <p className="font-light text-sm text-gray-700">
                 Minting of our first collection is now live!!!
               </p>
-              <a className="block" href={oldCollectionOpensea} target="_blank">
+              <a className="block" href={oldCollectionOpensea} target="_blank" rel="noreferrer">
                 <Button>Get it now</Button>
               </a>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
             <p>
               Our first collection is a number of 100 unique NFTs on Opensea. This collection is our secondary collection.
             </p>
-            <a className="block" href={oldCollectionOpensea} target="_blank">
+            <a className="block" href={oldCollectionOpensea} target="_blank" rel="noreferrer">
               <Button>Get it now</Button>
             </a>
           </div>

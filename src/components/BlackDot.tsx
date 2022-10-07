@@ -11,3 +11,5 @@ export const BlackDot = forwardRef<HTMLDivElement, Props>(({ size, ...props }, r
     <Image alt="dot" src="/images/icons/black-dot.png" width={size} height={size} />
   </motion.div>
 ))
+
+BlackDot.displayName = "BlackDot"
