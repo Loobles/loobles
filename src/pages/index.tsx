@@ -1,6 +1,7 @@
 import { Button } from "@/components/Button"
 import { HomeLayout } from "@/layouts/HomeLayout"
 import Image from "next/image"
+import Link from "next/link"
 import colors from "tailwindcss/colors"
 
 const heroPatternsDots = `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='${encodeURIComponent(colors.gray[300])}' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -17,7 +18,7 @@ export default function Home() {
             </h1>
             <h2 className="
               font-light font-pacifico text-2xl px-1 my-5 inline-block
-              bg-clip-text text-transparent bg-pink-400"
+              bg-clip-text text-transparent bg-brand-primary/90"
             >
               {`"let's climb the web"`}
             </h2>
@@ -53,7 +54,7 @@ export default function Home() {
                   py-2 rounded-xl bg-gray-800 text-white w-full
                   border-transparent focus:border-gray-600 focus:ring-0"
               />
-              <Button className="w-full sm:w-auto bg-gray-100 text-black">Subscribe</Button>
+              <Button className="w-full sm:w-auto !bg-gray-100 !text-black">Subscribe</Button>
             </div>
           </div>
         </div>
@@ -78,7 +79,7 @@ export default function Home() {
       {/* collections end */}
 
       {/* nfts */}
-      <section className="flex flex-col md:flex-row items-center justify-between gap-16 md:gap-0 px-content pt-8 pb-16 bg-gradient-to-r from-white via-pink-100/50 to-white">
+      <section className="flex flex-col md:flex-row items-center justify-between gap-16 md:gap-0 px-content pt-8 pb-16 bg-gradient-to-b sm:bg-gradient-to-r from-white via-brand-primary/5 to-white">
         <div className="flex-1 max-w-lg flex flex-col items-center md:mt-32">
           <div className="">
             <Image alt="loobles" src="/images/icons/loobles-mono.png" width={240} height={240} />
@@ -88,7 +89,7 @@ export default function Home() {
             <p>
               Our first collection is a number of 100 unique NFTs on Opensea. This collection is our secondary collection.
             </p>
-            <Button>Coming soon</Button>
+            <Button disabled className="!bg-gray-900">Coming soon</Button>
           </div>
         </div>
 
@@ -127,6 +128,19 @@ export default function Home() {
         </div>
       </section>
       {/* utilities end */}
+
+      {/* loobtoons */}
+      <section className="py-16">
+        <div className="flex flex-col items-center gap-6 py-12">
+          <h3 className="text-2xl font-semibold py-1">Check out our First Application</h3>
+          <Link href="/loobtoons">
+            <a>
+              <Button className="!px-12 !text-base">Loobtoons</Button>
+            </a>
+          </Link>
+        </div>
+      </section>
+      {/* loobtoons end */}
     </HomeLayout>
   )
 }

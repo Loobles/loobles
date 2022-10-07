@@ -24,7 +24,7 @@ export function Footer() {
               py-2 rounded-xl bg-gray-800 text-white w-full
               border-transparent focus:border-gray-600 focus:ring-0"
           />
-          <Button className="w-full sm:w-auto bg-gray-100 text-black">Subscribe</Button>
+          <Button className="w-full sm:w-auto !bg-gray-100 !text-black">Subscribe</Button>
         </div>
       </div>
     </section>

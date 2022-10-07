@@ -5,7 +5,12 @@ module.exports = {
     extend: {
       fontFamily: {
         pacifico: "'Pacifico', cursive"
-      }
+      },
+      colors: {
+        brand: {
+          primary: "#FC1956",
+        },
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
