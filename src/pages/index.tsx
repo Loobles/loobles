@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button"
+import { LoobIcons } from "@/containers/LoobIcons"
 import { oldCollectionOpensea } from "@/data/links"
 import { HomeLayout } from "@/layouts/HomeLayout"
 import Image from "next/image"
@@ -37,8 +38,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="md:w-1/2 py-40 border flex items-center justify-center flex-grow">
-            <p>Coming soon</p>
+          <div className="w-full md:w-1/2 flex items-center justify-center flex-grow py-40">
+            <LoobIcons />
           </div>
         </div>
 
@@ -85,7 +86,7 @@ export default function Home() {
       <section className="flex flex-col md:flex-row items-center justify-between gap-16 md:gap-0 px-content pt-8 pb-16 bg-gradient-to-b sm:bg-gradient-to-r from-white via-brand-primary/5 to-white">
         <div className="flex-1 max-w-lg flex flex-col items-center md:mt-32">
           <div className="">
-            <Image alt="loobles" src="/images/icons/loobles-mono.png" width={240} height={240} />
+            <Image alt="loobles" src="/images/icons/loobles-mono.png" width={200} height={200} />
           </div>
           <div className="space-y-4 text-center">
             <h3 className="text-2xl font-semibold py-1">Collection 2</h3>
@@ -98,7 +99,7 @@ export default function Home() {
 
         <div className="flex-1 max-w-lg flex flex-col items-center md:mb-32">
           <div className="">
-            <Image alt="loobles-old" src="/images/icons/loobles-old.png" width={240} height={240} />
+            <Image alt="loobles-old" src="/images/icons/loobles-old.png" width={180} height={180} />
           </div>
           <div className="space-y-4 text-center">
             <h3 className="text-2xl font-semibold py-1">Collection 1</h3>
