@@ -15,30 +15,30 @@ export default function Home() {
       <section className="md:h-[calc(100vh-60px)] relative flex flex-col md:justify-center px-content mb-12">
         <div className="flex flex-col md:flex-row items-center md:pb-36">
           <div className="text-center md:text-left md:w-1/2 py-12 md:py-0">
-            <h1 className="text-4xl font-bold max-w-md text-gray-900">
+            <h1 className="text-4xl md:text-5xl xl:text-7xl font-bold max-w-md xl:max-w-2xl mx-auto md:ml-0 text-gray-900">
               Welcome to the Loobles Community.
             </h1>
             <h2 className="
-              font-light font-pacifico text-2xl px-1 my-5 inline-block
+              font-light font-pacifico text-2xl md:text-3xl xl:text-4xl px-1 my-5 xl:my-8 inline-block
               bg-clip-text text-transparent bg-brand-primary/90"
             >
               {`"let's climb the web"`}
             </h2>
-            <p className="font-light text-lg max-w-md">
+            <p className="font-light text-lg md:text-xl xl:text-3xl max-w-md xl:max-w-2xl mx-auto md:ml-0">
               Loobles is a web3 tech company that develops software to aid the web3 Ecosystem.
             </p>
 
-            <div className="mt-5 space-y-3">
-              <p className="font-light text-sm text-gray-700">
+            <div className="mt-5 xl:mt-7 space-y-3 xl:space-y-5">
+              <p className="font-light text-sm md:text-base xl:text-xl text-gray-700">
                 Minting of our first collection is now live!!!
               </p>
               <a className="block" href={oldCollectionOpensea} target="_blank" rel="noreferrer">
-                <Button>Get it now</Button>
+                <Button className="text-base xl:text-xl !px-10">Get it now</Button>
               </a>
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 flex items-center justify-center flex-grow py-40">
+          <div className="w-full md:w-1/2 flex items-center justify-center flex-grow py-32 md:py-40">
             <LoobIcons />
           </div>
         </div>
