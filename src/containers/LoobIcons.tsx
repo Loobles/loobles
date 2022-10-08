@@ -6,8 +6,8 @@ import Image from "next/image"
 export function LoobIcons() {
   const { ready, x, y } = useMouseCenter()
 
-  const constraintX = ready ? x * 0.03 : undefined
-  const constraintY = ready ? y * 0.03 : undefined
+  const constraintX = ready ? x * 0.008 : undefined
+  const constraintY = ready ? y * 0.008 : undefined
 
   const constraintXReduced = constraintX ? constraintX * 0.4 : undefined
   const constraintYReduced = constraintY ? constraintY * 0.4 : undefined
@@ -19,6 +19,9 @@ export function LoobIcons() {
         animate={{
           x: constraintX,
           y: constraintY,
+        }}
+        whileHover={{
+          scale: 1.05
         }}
       >
         <Image alt="loobles" src="/images/icons/loobles-mono.png" width={200} height={200} />
@@ -33,6 +36,9 @@ export function LoobIcons() {
           x: constraintX && -constraintX,
           y: constraintY && -constraintY,
         }}
+        whileHover={{
+          scale: 1.1
+        }}
       >
         <Image alt="loobles-old" src="/images/icons/loobles-old.png" width={90} height={90} />
       </motion.div>
@@ -44,6 +50,9 @@ export function LoobIcons() {
         animate={{
           x: constraintX && -constraintX,
           y: constraintY && -constraintY,
+        }}
+        whileHover={{
+          scale: 1.1
         }}
       >
         <Image alt="loobles-wakanda" src="/images/icons/loobles-wakanda.png" width={80} height={80} />
@@ -57,6 +66,9 @@ export function LoobIcons() {
           x: constraintX && -constraintX,
           y: constraintY && -constraintY,
         }}
+        whileHover={{
+          scale: 1.1
+        }}
       >
         <Image alt="loobles-goldknight" src="/images/icons/loobles-goldknight.png" width={60} height={60} />
       </motion.div>
@@ -68,6 +80,9 @@ export function LoobIcons() {
         animate={{
           x: constraintXReduced,
           y: constraintYReduced,
+        }}
+        whileHover={{
+          scale: 1.1
         }}
       >
         <Image alt="twitter" src="/images/icons/twitter.png" width={35} height={35} />
@@ -81,6 +96,9 @@ export function LoobIcons() {
           x: constraintXReduced,
           y: constraintYReduced,
         }}
+        whileHover={{
+          scale: 1.1
+        }}
       >
         <Image alt="discord" src="/images/icons/discord.png" width={35} height={35} />
       </motion.div>
@@ -93,6 +111,9 @@ export function LoobIcons() {
           x: constraintXReduced,
           y: constraintYReduced,
         }}
+        whileHover={{
+          scale: 1.1
+        }}
       >
         <Image alt="instagram" src="/images/icons/instagram.png" width={35} height={35} />
       </motion.div>
@@ -102,14 +123,23 @@ export function LoobIcons() {
       <BlackDot
         className="absolute left-[-90px] bottom-[30px]"
         size={30}
+        whileHover={{
+          scale: 1.1
+        }}
       />
       <BlackDot
         className="absolute left-[40px] bottom-[-80px]"
         size={60}
+        whileHover={{
+          scale: 1.1
+        }}
       />
       <BlackDot
         className="absolute right-[-80px] top-[-40px]"
         size={50}
+        whileHover={{
+          scale: 1.1
+        }}
       />
       {/* dots end */}
     </div>
