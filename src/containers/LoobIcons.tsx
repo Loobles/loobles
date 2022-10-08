@@ -1,4 +1,5 @@
 import { BlackDot } from "@/components/BlackDot"
+import { socials } from "@/data/links"
 import { useMouseCenter } from "@/hooks/use-mouse-center"
 import { motion } from "framer-motion"
 import Image from "next/image"
@@ -75,7 +76,10 @@ export function LoobIcons() {
       {/* loobles goldknight end */}
 
       {/* twitter */}
-      <motion.div
+      <motion.a
+        href={socials.twitter}
+        target="_blank"
+        rel="noreferrer"
         className="absolute left-[-20px] top-[-90px]"
         animate={{
           x: constraintXReduced,
@@ -86,11 +90,14 @@ export function LoobIcons() {
         }}
       >
         <Image alt="twitter" src="/images/icons/twitter.png" width={35} height={35} />
-      </motion.div>
+      </motion.a>
       {/* twitter end */}
 
       {/* discord */}
-      <motion.div
+      <motion.a
+        href={socials.discord}
+        target="_blank"
+        rel="noreferrer"
         className="absolute right-[-90px] bottom-[70px]"
         animate={{
           x: constraintXReduced,
@@ -101,11 +108,14 @@ export function LoobIcons() {
         }}
       >
         <Image alt="discord" src="/images/icons/discord.png" width={35} height={35} />
-      </motion.div>
+      </motion.a>
       {/* discord end */}
 
       {/* instagram */}
-      <motion.div
+      <motion.a
+        href={socials.instagram}
+        target="_blank"
+        rel="noreferrer"
         className="absolute left-[-30px] bottom-[-20px]"
         animate={{
           x: constraintXReduced,
@@ -116,7 +126,7 @@ export function LoobIcons() {
         }}
       >
         <Image alt="instagram" src="/images/icons/instagram.png" width={35} height={35} />
-      </motion.div>
+      </motion.a>
       {/* instagram end */}
 
       {/* dots */}

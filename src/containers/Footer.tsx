@@ -1,13 +1,32 @@
 import { Button } from "@/components/Button"
+import { socials } from "@/data/links"
 import Image from "next/image"
 
 export function Footer() {
   return (
     <section className="bg-gray-900 text-gray-100 px-content pt-16 pb-20">
       <div className="flex items-center justify-center gap-4 max-w-xs mx-auto">
-        <Image alt="discord" src="/images/icons/discord-mono.png" width={60} height={60} />
-        <Image alt="instagram" src="/images/icons/instagram-mono.png" width={32} height={32} />
-        <Image alt="twitter" src="/images/icons/twitter-mono.png" width={44} height={44} />
+        <a
+          href={socials.discord}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image alt="discord" src="/images/icons/discord-mono.png" width={60} height={60} />
+        </a>
+        <a
+          href={socials.instagram}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image alt="instagram" src="/images/icons/instagram-mono.png" width={32} height={32} />
+        </a>
+        <a
+          href={socials.twitter}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image alt="twitter" src="/images/icons/twitter-mono.png" width={44} height={44} />
+        </a>
       </div>
 
       <div className="mt-6 flex flex-col gap-8 items-center px-2">
