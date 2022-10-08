@@ -12,28 +12,28 @@ export default function Home() {
   return (
     <HomeLayout title="Welcome to loobles">
       {/* hero */}
-      <section className="md:h-[calc(100vh-60px)] relative flex flex-col md:justify-center px-content mb-12">
+      <section className="md:h-[calc(100vh-60px)] max-h-[800px] relative flex flex-col md:justify-center px-content mb-12">
         <div className="flex flex-col md:flex-row items-center md:pb-36">
           <div className="text-center md:text-left md:w-1/2 py-12 md:py-0">
-            <h1 className="text-4xl md:text-5xl xl:text-7xl font-bold max-w-md xl:max-w-2xl mx-auto md:ml-0 text-gray-900">
+            <h1 className="text-4xl xl:text-5xl 2xl:text-7xl font-bold max-w-md xl:max-w-2xl mx-auto md:ml-0 text-gray-900">
               Welcome to the Loobles Community.
             </h1>
             <h2 className="
-              font-light font-pacifico text-2xl md:text-3xl xl:text-4xl px-1 my-5 xl:my-8 inline-block
+              font-light font-pacifico text-2xl xl:text-3xl 2xl:text-4xl px-1 my-5 xl:my-8 inline-block
               bg-clip-text text-transparent bg-brand-primary/90"
             >
               {`"let's climb the web"`}
             </h2>
-            <p className="font-light text-lg md:text-xl xl:text-3xl max-w-md xl:max-w-2xl mx-auto md:ml-0">
+            <p className="font-light text-lg xl:text-xl 2xl:text-3xl max-w-md 2xl:max-w-2xl mx-auto md:ml-0">
               Loobles is a web3 tech company that develops software to aid the web3 Ecosystem.
             </p>
 
-            <div className="mt-5 xl:mt-7 space-y-3 xl:space-y-5">
-              <p className="font-light text-sm md:text-base xl:text-xl text-gray-700">
+            <div className="mt-5 xl:mt-7 space-y-3 2xl:space-y-5">
+              <p className="font-light text-sm xl:text-base 2xl:text-xl text-gray-700">
                 Minting of our first collection is now live!!!
               </p>
               <a className="block" href={oldCollectionOpensea} target="_blank" rel="noreferrer">
-                <Button className="text-base xl:text-xl !px-10">Get it now</Button>
+                <Button className="text-base 2xl:text-xl !px-10">Get it now</Button>
               </a>
             </div>
           </div>
