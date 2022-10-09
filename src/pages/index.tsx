@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <HomeLayout title="Welcome to loobles">
       {/* hero */}
-      <section className="md:h-[calc(100vh-60px)] max-h-[800px] relative flex flex-col md:justify-center px-content mb-12">
+      <section className="md:h-[calc(100vh-60px)] md:max-h-[800px] relative flex flex-col md:justify-center px-content mb-12">
         <div className="flex flex-col md:flex-row items-center md:pb-36">
           <div className="text-center md:text-left md:w-1/2 py-12 md:py-0">
             <h1 className="text-4xl xl:text-5xl 2xl:text-7xl font-bold max-w-md xl:max-w-2xl mx-auto md:ml-0 text-gray-900">
