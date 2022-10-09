@@ -1,3 +1,5 @@
+import { BlackDot } from "@/components/BlackDot"
+import { Pie } from "@/components/Pie"
 import { HomeLayout } from "@/layouts/HomeLayout"
 import Image from "next/image"
 
@@ -31,8 +33,35 @@ export default function Loobtoons() {
           >
             <p className="text-sm text-white text-center">“Giving comic creators ultimate ownership and linking them to the blockchain”.</p>
           </div>
-        </div>
 
+          <BlackDot
+            size={80}
+            className="hidden md:block absolute top-[30px] right-[-180px] lg:right-[-200px]"
+            whileHover={{
+              scale: 1.1
+            }}
+          />
+
+          <Pie
+            src="/images/icons/pie-loobtoons-hero-center-left.png"
+            width={40}
+            ratio={1.263}
+            className="hidden md:block absolute top-[64px] left-[-96px]"
+            whileHover={{
+              scale: 1.1
+            }}
+          />
+
+          <Pie
+            src="/images/icons/pie-loobtoons-hero-bottom-right.png"
+            width={32}
+            ratio={1}
+            className="hidden md:block absolute bottom-[-30px] right-[-200px] lg:right-[-220px]"
+            whileHover={{
+              scale: 1.1
+            }}
+          />
+        </div>
       </section>
       {/* hero end */}
 
@@ -73,8 +102,38 @@ export default function Loobtoons() {
       </section>
 
       {/* comming soon */}
-      <section className="flex items-center justify-center px-content py-32">
-        <h3 className="text-3xl font-semibold">Coming soon</h3>
+      <section className="flex flex-col items-center px-content py-32">
+        <div className="relative flex flex-col items-center justify-center sm:px-8">
+          <h3 className="text-3xl sm:text-4xl font-semibold">Coming soon!!!</h3>
+
+          <BlackDot
+            size={36}
+            className="absolute left-[-36px] top-[-52px]"
+            whileHover={{
+              scale: 1.1
+            }}
+          />
+
+          <Pie
+            src="/images/icons/pie-coming-soon-bottom-right.png"
+            width={26}
+            ratio={1.032}
+            className="absolute top-[48px] right-[-20px]"
+            whileHover={{
+              scale: 1.1
+            }}
+          />
+
+          <Pie
+            src="/images/icons/pie-coming-soon-bottom-left.png"
+            width={20}
+            ratio={1.085}
+            className="absolute top-[52px] left-[-40px]"
+            whileHover={{
+              scale: 1.1
+            }}
+          />
+        </div>
       </section>
       {/* comming soon end */}
     </HomeLayout>
