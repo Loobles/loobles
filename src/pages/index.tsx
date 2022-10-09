@@ -1,4 +1,6 @@
+import { BlackDot } from "@/components/BlackDot"
 import { Button } from "@/components/Button"
+import { Pie } from "@/components/Pie"
 import { LoobIcons } from "@/containers/LoobIcons"
 import { oldCollectionOpensea } from "@/data/links"
 import { HomeLayout } from "@/layouts/HomeLayout"
@@ -15,8 +17,20 @@ export default function Home() {
       <section className="md:h-[calc(100vh-60px)] md:max-h-[800px] relative flex flex-col md:justify-center px-content mb-12">
         <div className="flex flex-col md:flex-row items-center md:pb-36">
           <div className="text-center md:text-left md:w-1/2 py-12 md:py-0">
-            <h1 className="text-4xl xl:text-5xl 2xl:text-7xl font-bold max-w-md xl:max-w-2xl mx-auto md:ml-0 text-gray-900">
-              Welcome to the Loobles Community.
+            <h1 className="relative text-4xl xl:text-5xl 2xl:text-7xl font-bold max-w-md xl:max-w-2xl mx-auto md:ml-0 text-gray-900">
+              <span> Welcome to the Loobles Community.</span>
+
+              <Pie
+                src="/images/icons/pie-hero-center.png"
+                width={40}
+                ratio={1.36}
+                className="
+                absolute
+                right-[4px] bottom-[-52px]
+                md:right-[60px]
+                lg:scale-[1.5]
+                xl:scale-[1.8]"
+              />
             </h1>
             <h2 className="
               font-light font-pacifico text-2xl xl:text-3xl 2xl:text-4xl px-1 my-5 xl:my-8 inline-block
@@ -85,10 +99,28 @@ export default function Home() {
       {/* nfts */}
       <section className="flex flex-col md:flex-row items-center justify-between gap-16 md:gap-0 px-content pt-8 pb-16 bg-gradient-to-b sm:bg-gradient-to-r from-white via-brand-primary/5 to-white">
         <div className="flex-1 max-w-lg flex flex-col items-center md:mt-32">
-          <div className="">
+          <div className="relative">
             <Image alt="loobles" src="/images/icons/loobles-mono.png" width={200} height={200} />
+
+            <Pie
+              src="/images/icons/pie-loobles-center-right.png"
+              width={40}
+              ratio={1}
+              className="absolute top-[110px] right-[-70px]"
+              whileHover={{
+                scale: 1.1
+              }}
+            />
+
+            <BlackDot
+              size={28}
+              className="absolute left-[-40px] bottom-[-20px]"
+              whileHover={{
+                scale: 1.1
+              }}
+            />
           </div>
-          <div className="space-y-4 text-center">
+          <div className="space-y-4 text-center mt-10">
             <h3 className="text-2xl font-semibold py-1">Collection 2</h3>
             <p>
               Our first collection is a number of 100 unique NFTs on Opensea. This collection is our secondary collection.
@@ -98,10 +130,38 @@ export default function Home() {
         </div>
 
         <div className="flex-1 max-w-lg flex flex-col items-center md:mb-32">
-          <div className="">
+          <div className="relative">
             <Image alt="loobles-old" src="/images/icons/loobles-old.png" width={180} height={180} />
+
+            <Pie
+              src="/images/icons/pie-loobles-old-center-right.png"
+              width={32}
+              ratio={1.067}
+              className="absolute top-[80px] right-[-60px]"
+              whileHover={{
+                scale: 1.1
+              }}
+            />
+
+            <Pie
+              src="/images/icons/pie-loobles-old-bottom-left.png"
+              width={60}
+              ratio={1.18}
+              className="absolute top-[140px] left-[-80px]"
+              whileHover={{
+                scale: 1.1
+              }}
+            />
+
+            <BlackDot
+              size={32}
+              className="absolute right-[56px] bottom-[-44px]"
+              whileHover={{
+                scale: 1.1
+              }}
+            />
           </div>
-          <div className="space-y-4 text-center">
+          <div className="space-y-4 text-center mt-14">
             <h3 className="text-2xl font-semibold py-1">Collection 1</h3>
             <p>
               Our first collection is a number of 100 unique NFTs on Opensea. This collection is our secondary collection.
@@ -136,14 +196,50 @@ export default function Home() {
       {/* utilities end */}
 
       {/* loobtoons */}
-      <section className="py-16">
-        <div className="flex flex-col items-center gap-6 py-12">
-          <h3 className="text-2xl font-semibold py-1">Check out our First Application</h3>
+      <section className="flex flex-col items-center py-16">
+        <div className="relative flex flex-col items-center gap-6 py-12 sm:px-8">
+          <h3 className="text-2xl sm:text-3xl font-semibold py-1">Check out our First Application</h3>
           <Link href="/loobtoons">
             <a>
               <Button className="!px-12 !text-base">Loobtoons</Button>
             </a>
           </Link>
+
+          <Pie
+            src="/images/icons/pie-loobtoons-top-right.png"
+            width={26}
+            ratio={0.805}
+            className="absolute top-[16px] right-[20px] sm:right-[52px]"
+            whileHover={{
+              scale: 1.1
+            }}
+          />
+
+          <Pie
+            src="/images/icons/pie-loobtoons-bottom-left.png"
+            width={36}
+            ratio={0.923}
+            className="absolute bottom-[40px] left-[0px]"
+            whileHover={{
+              scale: 1.1
+            }}
+          />
+
+          <BlackDot
+            size={28}
+            className="absolute left-[90px] top-[4px]"
+            whileHover={{
+              scale: 1.1
+            }}
+          />
+
+          <BlackDot
+            size={20}
+            className="absolute bottom-[48px] right-[0px] sm:right-[48px]"
+            whileHover={{
+              scale: 1.1
+            }}
+          />
         </div>
       </section>
       {/* loobtoons end */}
