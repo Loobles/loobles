@@ -90,12 +90,12 @@ export default function Loobtoons() {
         </div>
 
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-semibold py-4">What is Loobtoons all about?</h2>
+          <h2 className="text-xl md:text-2xl font-semibold py-4">NFTs in Loobtoons</h2>
           <p className="text-xl font-light leading-8">
             NFTs as a whole has been a game Changer in the upcoming technology that is web3.
             At loobtoons, we are giving NFTs a new meaning.
             We want to show the ecosystem what an NFT can be.
-            We want to give a new light to NON FUNGIBLE TOKENS, and we want to bring it fully in the comic space.
+            We want to give a new light to <span className="font-medium underline">NON FUNGIBLE TOKENS</span>, and we want to bring it fully in the comic space.
             Loobtoons features Decentralized comics, NFTs and Crypto.
           </p>
         </div>

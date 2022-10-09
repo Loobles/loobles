@@ -123,7 +123,7 @@ export default function Home() {
           <div className="space-y-4 text-center mt-10">
             <h3 className="text-2xl font-semibold py-1">Collection 2</h3>
             <p>
-              Our first collection is a number of 100 unique NFTs on Opensea. This collection is our secondary collection.
+              The second collection ia a number of 9,900 NFTs on the stacks ecosystem. This is our primary collection.
             </p>
             <Button disabled className="!bg-gray-900">Coming soon</Button>
           </div>
