@@ -1,5 +1,5 @@
 import { BlackDot } from "@/components/BlackDot"
-import { socials } from "@/data/links"
+import { links } from "@/data/links"
 import { useMouseCenter } from "@/hooks/use-mouse-center"
 import { motion } from "framer-motion"
 import Image from "next/image"
@@ -25,7 +25,7 @@ export function LoobIcons() {
           scale: 1.05
         }}
       >
-        <Image alt="loobles" src="/images/icons/loobles-mono.png" width={200} height={200} />
+        <Image alt="loobles" src="/images/icons/loobles-new.png" width={180} height={180} />
       </motion.div>
       {/* loobles end */}
 
@@ -77,7 +77,7 @@ export function LoobIcons() {
 
       {/* twitter */}
       <motion.a
-        href={socials.twitter}
+        href={links.socials.twitter}
         target="_blank"
         rel="noreferrer"
         className="absolute left-[-20px] top-[-90px]"
@@ -95,7 +95,7 @@ export function LoobIcons() {
 
       {/* discord */}
       <motion.a
-        href={socials.discord}
+        href={links.socials.discord}
         target="_blank"
         rel="noreferrer"
         className="absolute right-[-90px] bottom-[70px]"
@@ -113,7 +113,7 @@ export function LoobIcons() {
 
       {/* instagram */}
       <motion.a
-        href={socials.instagram}
+        href={links.socials.instagram}
         target="_blank"
         rel="noreferrer"
         className="absolute left-[-30px] bottom-[-20px]"

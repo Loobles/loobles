@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button"
-import { socials } from "@/data/links"
+import { links } from "@/data/links"
 import Image from "next/image"
 
 export function Footer() {
@@ -7,21 +7,21 @@ export function Footer() {
     <section className="bg-gray-900 text-gray-100 px-content pt-16 pb-20">
       <div className="flex items-center justify-center gap-4 max-w-xs mx-auto">
         <a
-          href={socials.discord}
+          href={links.socials.discord}
           target="_blank"
           rel="noreferrer"
         >
           <Image alt="discord" src="/images/icons/discord-mono.png" width={60} height={60} />
         </a>
         <a
-          href={socials.instagram}
+          href={links.socials.instagram}
           target="_blank"
           rel="noreferrer"
         >
           <Image alt="instagram" src="/images/icons/instagram-mono.png" width={32} height={32} />
         </a>
         <a
-          href={socials.twitter}
+          href={links.socials.twitter}
           target="_blank"
           rel="noreferrer"
         >
@@ -43,7 +43,7 @@ export function Footer() {
               py-2 rounded-xl bg-gray-800 text-white w-full
               border-transparent focus:border-gray-600 focus:ring-0"
           />
-          <Button className="w-full sm:w-auto !bg-gray-100 !text-black">Subscribe</Button>
+          <Button className="w-full sm:w-auto !bg-gray-100 !border-gray-100 !text-black">Subscribe</Button>
         </div>
       </div>
     </section>

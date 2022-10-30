@@ -2,7 +2,7 @@ import { BlackDot } from "@/components/BlackDot"
 import { Button } from "@/components/Button"
 import { Pie } from "@/components/Pie"
 import { LoobIcons } from "@/containers/LoobIcons"
-import { oldCollectionOpensea } from "@/data/links"
+import { links } from "@/data/links"
 import { HomeLayout } from "@/layouts/HomeLayout"
 import Image from "next/image"
 import Link from "next/link"
@@ -44,11 +44,16 @@ export default function Home() {
 
             <div className="mt-5 xl:mt-7 space-y-3 2xl:space-y-5">
               <p className="font-light text-sm xl:text-base 2xl:text-xl text-gray-700">
-                Minting of our first collection is now live!!!
+                GET OUR NFTs ON ETH AND STACKS
               </p>
-              <a className="block" href={oldCollectionOpensea} target="_blank" rel="noreferrer">
-                <Button className="text-base 2xl:text-xl !px-10">Get it now</Button>
-              </a>
+              <div className="flex items-center justify-center md:justify-start gap-4">
+                <a className="block" href={links.collections.opensea} target="_blank" rel="noreferrer">
+                  <Button className="text-base 2xl:text-xl !px-10">ETH</Button>
+                </a>
+                <a className="block" href={links.collections.gamma} target="_blank" rel="noreferrer">
+                  <Button className="text-base 2xl:text-xl !px-10">Stacks</Button>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -72,7 +77,7 @@ export default function Home() {
                   py-2 rounded-xl bg-gray-800 text-white w-full
                   border-transparent focus:border-gray-600 focus:ring-0"
               />
-              <Button className="w-full sm:w-auto !bg-gray-100 !text-black">Subscribe</Button>
+              <Button className="w-full sm:w-auto !bg-gray-100 !border-gray-100 !text-black">Subscribe</Button>
             </div>
           </div>
         </div>
@@ -100,7 +105,7 @@ export default function Home() {
       <section className="flex flex-col md:flex-row items-center justify-between gap-16 md:gap-0 px-content pt-8 pb-16 bg-gradient-to-b sm:bg-gradient-to-r from-white via-brand-primary/5 to-white">
         <div className="flex-1 max-w-lg flex flex-col items-center md:mt-32">
           <div className="relative">
-            <Image alt="loobles" src="/images/icons/loobles-mono.png" width={200} height={200} />
+            <Image alt="loobles" src="/images/icons/loobles-new.png" width={200} height={200} />
 
             <Pie
               src="/images/icons/pie-loobles-center-right.png"
@@ -123,9 +128,11 @@ export default function Home() {
           <div className="space-y-4 text-center mt-10">
             <h3 className="text-2xl font-semibold py-1">Collection 2</h3>
             <p>
-              The second collection ia a number of 9,900 NFTs on the stacks ecosystem. This is our primary collection.
+              The second collection is a number of 9,900 NFTs on Gamma. This is our primary collection.
             </p>
-            <Button disabled className="!bg-gray-900">Coming soon</Button>
+            <a className="block" href={links.collections.gamma} target="_blank" rel="noreferrer">
+              <Button disabled className="!bg-gray-900 hover:!bg-transparent !border-gray-900 hover:!text-gray-900">Get it now</Button>
+            </a>
           </div>
         </div>
 
@@ -166,7 +173,7 @@ export default function Home() {
             <p>
               Our first collection is a number of 100 unique NFTs on Opensea. This collection is our secondary collection.
             </p>
-            <a className="block" href={oldCollectionOpensea} target="_blank" rel="noreferrer">
+            <a className="block" href={links.collections.opensea} target="_blank" rel="noreferrer">
               <Button>Get it now</Button>
             </a>
           </div>
